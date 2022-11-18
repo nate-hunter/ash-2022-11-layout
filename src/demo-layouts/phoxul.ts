@@ -417,3 +417,5 @@ document.querySelector<HTMLHtmlElement>("#app")!.innerHTML = `
 </body>
 </html>
 `;
+
+export {};
