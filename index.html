@@ -4,28 +4,43 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="index.css">
+
     <title>A/M</title>
   </head>
   <body>
     <div id="app"></div>
 
-    <nav>
-      <a href='#'>AM</a>
-      <a href='#'>About</a>
-      <a href='#'>Testimoniials</a>
-      <a href='#'>Listings</a>
-      <a href='#'>Contact</a>
+    <!---------------- HEADER ------------------------>
+    <header class="header">
+      <a class='header__logo' href='#'>AM</a>
+
+      <ul class='header__nav'>
+        <a class='header__nav--link' href='#'>About</a>
+        <a class='header__nav--link' href='#'>Testimonials</a>
+        <a class='header__nav--link' href='https://www.renthop.com/managers/ashini-mehta' target="_blank" rel="noopener noreferrer">Listings</a>
+        <a class='header__nav--link' href='#'>Contact</a>
       </ul>
-    </nav>
+    </header>
 
     <main>
-      <!---------------- HOME ------------------------>
-      <section>
-        <h1>Ashini Mehta</h1>
-        <h2>New York City Luxory Real Estate.</h2>
+      <!---------------- HERO ------------------------>
+      <section class='hero'>
+        <div class="hero__content">
+          <h1 class='hero__content--title'>Ashini Mehta</h1>
+          <h2 class='hero__content--sub-title'>New York City Luxory Real Estate.</h2>
+          
+          <div class="hero__content--links">
+            <a class='hero__content--links__view-listings' href='#'>View Listings</a>
+            <a class='hero__content--links__contact' href='#'>Contact</a>
+          </div>
+        </div>
+
+        <figure class="hero__bg">
+          <img loading='lazy' src="images/nyc-6.jpg" alt="nyc">
+        </figure>
         
-        <a href='#'>View Listings</a>
-        <a href='#'>Contact</a>
       </section>
 
       <!---------------- ABOUT ----------------------->
