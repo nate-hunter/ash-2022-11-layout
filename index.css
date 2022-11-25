@@ -96,3 +96,21 @@ a {
 li {
   list-style: none;
 }
+
+/* ---------------- UTILITIES ----------------  */
+/* Section Padding: */
+.section__padding {
+  padding: var(--padding-d-l-v) var(--padding-d-l-h);
+}
+
+/* Section Title: */
+.section__title {
+  font-size: var(--font-size-d-sc);
+  font-weight: 900;
+}
+
+/* Section Paragraphs: */
+.section__par {
+  font-size: var(--font-size-st-sc);
+  color: var(--color-quaternary);
+}
