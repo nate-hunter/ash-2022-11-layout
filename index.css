@@ -12,13 +12,72 @@
   font-style: normal;
 }
 
-html,
+:root {
+  font-size: 62.5%;
+
+  /* -------- COLORS --------  */
+  --color-primary: #f4f4f4;
+
+  --color-secondary: #192231;
+  --color-secondary-Op-40: #19223166;
+
+  /* Do I like these names? */
+  --color-tertiary: #c0b283;
+  --color-quaternary: #eddbcd;
+
+  /* -------- PADDING --------  */
+  /* Dynamic: */
+  --padding-d-l-v: calc(2rem + 12vh);
+  --padding-d-l-h: calc(2rem + 12vw);
+
+  --padding-d-mc-v: calc(1rem + 4vh);
+  --padding-d-mc-h: calc(1rem + 4vw);
+
+  --padding-d-m-h: calc(1rem + 2vw);
+  --padding-d-m-v: calc(1rem + 2vh);
+
+  --padding-d-s-h: calc(1rem + 1vw);
+  --padding-d-s-v: calc(1rem + 1vh);
+
+  /* Static: */
+  --padding-st-l-h: 3rem;
+  --padding-st-l-v: 2rem;
+
+  --padding-st-m-h: 2.5rem;
+  --padding-st-m-v: 1.5rem;
+
+  --padding-st-s-h: 2rem;
+  --padding-st-s-v: 1rem;
+
+  /* -------- FONTS --------  */
+  /* Dynamic: */
+  --font-size-d-lc: calc(3rem + 3.5vw);
+  --font-size-d-l: calc(2rem + 3vw);
+  --font-size-d-mc: calc(2rem + 2.5vw);
+  --font-size-d-m: calc(1rem + 2vw);
+  --font-size-d-sc: calc(1rem + 1.5vw);
+  --font-size-d-s: calc(1rem + 1vw);
+
+  /* Static: */
+  --font-size-st-xl: 4rem;
+  --font-size-st-lc: 3.5rem;
+  --font-size-st-l: 3rem;
+  --font-size-st-mc: 2.5rem;
+  --font-size-st-m: 2rem;
+  --font-size-st-sc: 1.5rem;
+  --font-size-st-s: 1rem;
+  --font-size-st-xsc: 0.875rem;
+  --font-size-st-xs: 0.75rem;
+
+  /* Font Family: */
+  --font-family-title: 'Marcellus', serif;
+  --font-family-content: 'Raleway', sans-serif;
+}
+
 body {
-  font-family: 'Thicccboi';
-  /* font-family: 'Della Respira', serif; */
-  /* font-family: 'Marcellus', serif; */
-  /* font-family: 'Mulish', sans-serif; */
-  /* font-family: 'Raleway', sans-serif; */
+  background-color: var(--color-primary);
+  font-family: var(--font-family-content);
+  line-height: 1.6;
 }
 
 *,
@@ -29,6 +88,11 @@ body {
   box-sizing: border-box;
 }
 
-:root {
-  font-size: 62.5%;
+a {
+  text-decoration: none;
+  border-radius: 1rem;
+}
+
+li {
+  list-style: none;
 }
