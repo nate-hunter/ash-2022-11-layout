@@ -114,3 +114,18 @@ li {
   font-size: var(--font-size-st-sc);
   color: var(--color-quaternary);
 }
+
+/* Overall Layout */
+.container {
+  display: grid;
+  grid-template-columns:
+    [container-start] repeat(12, minmax(min-content, 12.5rem))
+    [container-end];
+  /* grid-template-rows: repeat(9, min-content); */
+  grid-template-rows: repeat(6, min-content);
+  justify-content: center;
+}
+
+.general-layout {
+  grid-column: container-start / container-end;
+}
