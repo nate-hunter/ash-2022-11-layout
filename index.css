@@ -129,3 +129,50 @@ li {
 .general-layout {
   grid-column: container-start / container-end;
 }
+
+.header {
+  background-color: var(--color-secondary);
+  padding: var(--padding-d-m-v) var(--padding-d-l-h);
+
+  display: flex;
+  justify-content: space-between;
+  column-gap: 2rem;
+
+  position: relative;
+}
+
+.header::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -49.5rem;
+  height: 50rem;
+  width: 100%;
+  background-color: var(--color-secondary);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 0% 100%, 0% 0%);
+  z-index: -1;
+}
+
+.header__logo {
+  font-size: var(--font-size-st-m);
+  color: var(--color-primary);
+}
+
+.header__nav {
+  display: flex;
+  gap: 3rem;
+}
+
+.header__nav--link {
+  font-size: var(--font-size-st-sc);
+  color: var(--color-quaternary);
+  transition: all 0.2s ease-in-out;
+}
+
+.header__nav--link:first-child {
+  color: var(--color-primary);
+}
+
+.header__nav--link:hover {
+  color: var(--color-primary);
+}
