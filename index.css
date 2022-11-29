@@ -112,7 +112,8 @@ li {
 /* Section Paragraphs: */
 .section__par {
   font-size: var(--font-size-st-sc);
-  color: var(--color-quaternary);
+  /* color: var(--color-quaternary); */
+  color: var(--color-secondary);
 }
 
 /* Overall Layout */
@@ -263,4 +264,97 @@ li {
   border: 1px solid transparent;
   background-color: var(--color-primary);
   color: var(--color-secondary);
+}
+
+/* ---------------- ABOUT ----------------  */
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* justify-content: flex-start; */
+
+  gap: 10rem;
+}
+
+.about__content {
+  /* flex-basis: 50%; */
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.about__content--experience__list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.about__content--experience__item {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.about__content--experience__item i {
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+  border-radius: 50%;
+  padding: var(--padding-st-s-v);
+  font-size: var(--font-size-st-sc);
+}
+
+.about__img {
+  /* flex-basis: 50%; */
+  display: flex;
+  /* justify-content: flex-end; */
+  /* align-items: flex-start; */
+  position: relative;
+  /* height: 300px; */
+
+  /* border: 1px solid var(--color-tertiary); */
+}
+
+.about__img::before,
+.about__img::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  /* display: flex; */
+  /* justify-content: flex-start; */
+}
+
+.about__img::before {
+  top: -5%;
+  left: -8%;
+  width: 90%;
+  height: 50%;
+  background: url('images/bg-dots.png');
+}
+
+.about__img::after {
+  top: 5%;
+  right: -5%;
+  height: 100%;
+  width: 100%;
+
+  /* display: flex;
+  justify-content: flex-end; */
+  background-color: var(--color-secondary);
+}
+
+.about__img img {
+  /* height: 80%;
+  width: 80%; */
+  object-fit: cover;
+  transition: all 0.25s ease-in-out;
+}
+
+.about__img:hover img {
+  transform: scale(1.05);
+  /* border: none; */
+  /* border: 1px solid var(--color-tertiary); */
+}
+
+.about__img:hover {
+  border: none;
 }
