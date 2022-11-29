@@ -358,3 +358,43 @@ li {
 .about__img:hover {
   border: none;
 }
+
+/* ---------------- CONTACT ----------------  */
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  padding: var(--padding-d-m-h) var(--padding-d-m-v);
+}
+
+.contact__form {
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: var(--padding-d-s-h) var(--padding-d-s-v);
+  background-color: #fff;
+  border-radius: 3rem;
+}
+
+.contact__form p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact__form p input,
+.contact__form p textarea {
+  border: 0.5px solid var(--color-secondary);
+  border-radius: 3px;
+}
+
+.contact__form button {
+  background-color: var(--color-tertiary);
+  color: var(--color-secondary);
+  border: none;
+  padding: 10px 12px;
+  border-radius: 3px;
+}
