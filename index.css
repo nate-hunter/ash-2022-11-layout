@@ -16,14 +16,35 @@
   font-size: 62.5%;
 
   /* -------- COLORS --------  */
-  --color-primary: #f4f4f4;
 
-  --color-secondary: #192231;
-  --color-secondary-Op-40: #19223166;
+  /* DEMO'S */
+  --color-primary: hsl(0, 0%, 100%);
+
+  --color-secondary: hsl(0, 0%, 11%);
+  --color-secondary-Op-40: hsla(0, 0%, 11%, 0.4);
+
+  /* --color-tertiary: hsl(0, 0%, 17%);
+  --color-quaternary: hsl(0, 1%, 50%); */
+
+  /* PALETTE-1 */
+  /* Do I like these names? */
+  /* --color-primary: #f4f4f4; */
+
+  /* --color-secondary: #192231;
+  --color-secondary-Op-40: #19223166; */
+
+  --color-tertiary: #c0b283;
+  /* --color-quaternary: #eddbcd; */
+
+  /* PALETTE-2 */
+  /* --color-primary: #f4f4f4; */
+
+  /* --color-secondary: #040404ff; */
+  /* --color-secondary-Op-40: #04040466; */
 
   /* Do I like these names? */
-  --color-tertiary: #c0b283;
-  --color-quaternary: #eddbcd;
+  /* --color-tertiary: #c19881ff; */
+  --color-quaternary: #a1c7c4ff;
 
   /* -------- PADDING --------  */
   /* Dynamic: */
@@ -357,4 +378,133 @@ li {
 
 .about__img:hover {
   border: none;
+}
+
+/* ---------------- CONTACT ----------------  */
+.contact {
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+  /* justify-content: center; */
+}
+
+.contact__form {
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: var(--padding-d-s-h) var(--padding-d-s-v);
+  background-color: #fff;
+  border-radius: 3rem;
+}
+
+.contact__form p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact__form p input,
+.contact__form p textarea {
+  border: 0.5px solid var(--color-secondary);
+  border-radius: 3px;
+}
+
+.contact__form button {
+  background-color: var(--color-tertiary);
+  color: var(--color-secondary);
+  border: none;
+  padding: 10px 12px;
+  border-radius: 3px;
+}
+
+/* ---------------- FOOTER ----------------  */
+.footer {
+  display: flex;
+  flex-direction: column;
+  /* align-items: flex-start; */
+  gap: 4rem;
+
+  background: linear-gradient(to bottom, var(--color-secondary), var(--color-secondary-Op-40)),
+    url(images/nyc-4.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.footer__container {
+  display: flex;
+  align-items: center;
+  /* align-items: flex-start; */
+  gap: 4rem;
+
+  border-top: 1px solid var(--color-tertiary);
+  border-bottom: 1px solid var(--color-tertiary);
+}
+
+.footer__conclusion,
+.footer__links,
+.footer__contact-info {
+  padding: var(--padding-st-l-h) var(--padding-st-m-h) var(--padding-st-l-h);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem 0;
+}
+
+.footer__conclusion {
+  flex-basis: 30%;
+  border-right: 1px solid var(--color-tertiary);
+}
+
+.footer__links {
+  flex-basis: 35%;
+  border-right: 1px solid var(--color-tertiary);
+  /* border-left: 1px solid var(--color-tertiary); */
+}
+
+.footer__contact-info {
+  flex-basis: 35%;
+}
+
+.footer__conclusion--par {
+  font-size: var(--font-size-st-sc);
+  color: var(--color-tertiary);
+}
+
+.footer__links--title,
+.footer__contact-info--title {
+  font-size: var(--font-size-st-m);
+  color: var(--color-primary);
+}
+
+.footer__links--list,
+.footer__contact-info--list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem 0;
+}
+
+.footer__links--list li a,
+.footer__contact-info--list li,
+.footer__contact-info--list i {
+  font-size: var(--font-size-st-sc);
+  color: var(--color-tertiary);
+}
+
+.footer__contact-info--list__item {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.footer__year {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.footer__year--content {
+  font-size: var(--font-size-st-sc);
+  color: var(--color-tertiary);
 }
