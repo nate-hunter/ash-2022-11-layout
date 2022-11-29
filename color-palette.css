@@ -1,0 +1,54 @@
+.palette-1 {
+  /* https://stephcorrigan.com/sophisticated-color-palettes/ */
+  color: #192231;
+  color: #404a42;
+  color: #c0b283;
+  color: #eddbcd;
+  color: #f4f4f4;
+}
+
+/* https://www.kseniiakrasilich.com/squarespace-help/luxurious-color-palette#:~:text=The%20gold%20and%20burnt%20orange,to%20be%20rich%20and%20luxurious. */
+.palette-2 {
+  /* https://www.canva.com/colors/color-palettes/emerald-entrance/?clickId=2Yc0ju3PwxyNUtbz4oWQCVcdUkA0mdWFIVVi1w0&utm_medium=affiliate&utm_source=Kseniia%20Krasilich_2321023&irgwc=1 */
+  /* Tan */
+  color: #B68D40;
+
+  /* Cream */
+  color: #F4EBD0;
+
+  /* Charcoal */
+  color: #122620;
+
+  /* Gold */
+  color: #D6AD60;
+}
+
+.palette-3 {
+  /* https://www.canva.com/colors/color-palettes/paper-cities/?clickId=2Yc0ju3PwxyNUtbz4oWQCVcdUkA0mdXxIVVi1w0&utm_medium=affiliate&utm_source=Kseniia%20Krasilich_2321023&irgwc=1 */
+  /* Black */
+  color: #201A1E;
+
+  /* Brown */
+  color: #D0B49F;
+
+  /* Champagne */
+  color: #E4D4C8;
+
+  /* Pewter */
+  color: #E2E6E7;
+}
+
+.palette-4 {
+  /* https://www.canva.com/colors/color-palettes/old-soul-shop/?clickId=2Yc0ju3PwxyNUtbz4oWQCVcdUkA0mdXhIVVi1w0&utm_medium=affiliate&utm_source=Kseniia%20Krasilich_2321023&irgwc=1 */
+  /* Puce */
+  color: #56453E;
+
+  /* Black */
+  color: #211C1D;
+
+  /* Khaki */
+  color: #E0D7C7;
+
+  /* Yellow */
+  color: #F1E2AD;
+}
