@@ -215,7 +215,7 @@ li {
 
 .hero__bg {
   background: linear-gradient(to bottom, var(--color-secondary), var(--color-secondary-Op-40)),
-    url(images/nyc-4.jpg);
+    url(images/nyc-6.jpg);
   background-size: cover;
   background-position: center;
   position: absolute;
